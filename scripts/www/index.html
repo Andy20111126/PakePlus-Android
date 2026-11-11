@@ -11,7 +11,6 @@
         box-sizing: border-box;
         font-family: system-ui, sans-serif;
     }
-
     body {
         background-color: #ffffff;
         height: 100vh;
@@ -19,7 +18,6 @@
         flex-direction: column;
         overflow: hidden;
     }
-
     /* 主内容区 */
     .content-area {
         flex-grow: 1;
@@ -29,14 +27,12 @@
         background-color: #ffffff;
         position: relative;
     }
-
     .main-video {
         max-width: 70vw;
         max-height: 70vh;
         display: none;
         object-fit: contain;
     }
-
     /* 底部导航 */
     .bottom-nav {
         display: flex;
@@ -45,7 +41,6 @@
         gap: 18px;
         padding: 12px 20px 28px;
     }
-
     .nav-item-circle {
         width: 72px;
         height: 72px;
@@ -58,7 +53,6 @@
         font-size: 24px;
         cursor: pointer;
     }
-
     .nav-item-wide {
         padding: 0 18px;
         height: 72px;
@@ -70,25 +64,20 @@
         gap: 8px;
         cursor: pointer;
     }
-
     .nav-wide-icon {
         font-size: 22px;
     }
-
     .nav-wide-text {
         font-size: 15px;
         font-weight: 500;
     }
-
     /* 静止按钮：只在视频播放时显示 */
     .stop-btn {
         display: none;
     }
-
     .stop-btn.show {
         display: flex;
     }
-
     /* 全局遮罩层 */
     .overlay {
         position: fixed;
@@ -97,11 +86,9 @@
         z-index: 100;
         display: none;
     }
-
     .overlay.active {
         display: block;
     }
-
     /* 通用面板 */
     .panel {
         position: fixed;
@@ -110,7 +97,6 @@
         display: none;
         overflow-y: auto;
     }
-
     /* 卡包面板 */
     .card-panel {
         bottom: 0;
@@ -122,11 +108,9 @@
         border-radius: 20px 20px 0 0;
         padding: 20px 16px;
     }
-
     .card-panel.active {
         display: block;
     }
-
     /* 设置面板 */
     .setting-panel {
         inset: 0;
@@ -134,11 +118,9 @@
         height: 100%;
         padding: 24px 20px 40px;
     }
-
     .setting-panel.active {
         display: block;
     }
-
     /* 设置页头部：奶蛙头像 + 标题 */
     .setting-header {
         display: flex;
@@ -146,7 +128,6 @@
         gap: 14px;
         margin-bottom: 24px;
     }
-
     .frog-avatar {
         width: 54px;
         height: 54px;
@@ -155,19 +136,16 @@
         overflow: hidden;
         flex-shrink: 0;
     }
-
     .frog-avatar img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
-
     .setting-title {
         font-size: 20px;
         font-weight: 600;
         color: #111;
     }
-
     /* 设置菜单项 */
     .menu-item {
         display: flex;
@@ -178,13 +156,11 @@
         font-size: 15px;
         color: #222;
     }
-
     .menu-left {
         display: flex;
         align-items: center;
         gap: 10px;
     }
-
     .toggle {
         width: 50px;
         height: 28px;
@@ -194,11 +170,9 @@
         cursor: pointer;
         transition: background 0.25s;
     }
-
     .toggle.on {
         background: #222;
     }
-
     .toggle::after {
         content: "";
         position: absolute;
@@ -210,16 +184,13 @@
         left: 2px;
         transition: left 0.25s;
     }
-
     .toggle.on::after {
         left: 24px;
     }
-
     /* 关于奶蛙身世按钮 */
     .about-button-item {
         margin: 18px 0 24px;
     }
-
     .about-button {
         width: 100%;
         padding: 14px 16px;
@@ -232,19 +203,16 @@
         text-align: center;
         cursor: pointer;
     }
-
     /* 开发和制作区域 */
     .credit-section {
         margin-top: 10px;
     }
-
     .credit-title {
         font-size: 14px;
         color: #666;
         margin-bottom: 14px;
         padding-left: 4px;
     }
-
     .credit-item {
         display: flex;
         align-items: center;
@@ -254,7 +222,6 @@
         border-radius: 14px;
         margin-bottom: 12px;
     }
-
     .credit-avatar {
         width: 44px;
         height: 44px;
@@ -263,79 +230,66 @@
         overflow: hidden;
         flex-shrink: 0;
     }
-
     .credit-avatar img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
-
     .credit-info {
         flex-grow: 1;
     }
-
     .credit-name {
         font-size: 15px;
         font-weight: 600;
         color: #222;
         margin-bottom: 2px;
     }
-
     .credit-role {
         font-size: 13px;
         color: #888;
     }
-
     /* 好评区域 */
     .review-section {
         margin-top: 24px;
         padding-bottom: 40px;
     }
-
     .review-title {
         font-size: 14px;
         color: #666;
         margin-bottom: 14px;
         padding-left: 4px;
     }
-
     .review-card {
         background: #fafafa;
         border-radius: 14px;
         padding: 14px 12px;
         margin-bottom: 12px;
     }
-
     .review-header {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 6px;
     }
-
     .review-app {
         font-size: 15px;
         font-weight: 600;
         color: #222;
     }
-
     .review-author {
         font-size: 12px;
         color: #999;
     }
-
     .review-stars {
         font-size: 13px;
         color: #ffb400;
         margin-bottom: 8px;
     }
-
     .review-content {
         font-size: 13px;
         line-height: 1.6;
         color: #444;
     }
-
     /* 关闭按钮 */
     .close-modal {
         position: absolute;
@@ -351,7 +305,6 @@
         cursor: pointer;
         z-index: 12;
     }
-
     /* 关于奶蛙身世视频页：居中显示 */
     .about-panel {
         position: fixed;
@@ -364,11 +317,9 @@
         justify-content: center;
         z-index: 200;
     }
-
     .about-panel.active {
         display: flex;
     }
-
     .about-video {
         max-width: 90vw;
         max-height: 90vh;
@@ -376,7 +327,6 @@
         height: auto;
         object-fit: contain;
     }
-
     .close-about-btn {
         position: absolute;
         top: 18px;
@@ -393,7 +343,6 @@
         cursor: pointer;
         z-index: 201;
     }
-
     /* 卡包样式 */
     .modal-header {
         display: flex;
@@ -402,16 +351,13 @@
         position: relative;
         margin-bottom: 16px;
     }
-
     .modal-title {
         font-size: 18px;
         font-weight: 500;
     }
-
     .card-section {
         margin-bottom: 22px;
     }
-
     .section-title {
         font-size: 15px;
         font-weight: 600;
@@ -419,13 +365,11 @@
         margin: 0 0 12px;
         padding-left: 4px;
     }
-
     .card-grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 12px;
     }
-
     .card-item {
         border-radius: 14px;
         overflow: hidden;
@@ -435,7 +379,6 @@
         flex-direction: column;
         cursor: pointer;
     }
-
     .card-media {
         width: 100%;
         aspect-ratio: 4 / 5;
@@ -443,14 +386,12 @@
         position: relative;
         overflow: hidden;
     }
-
     .card-media video {
         width: 100%;
         height: 100%;
         object-fit: cover;
         display: block;
     }
-
     .card-name {
         padding: 8px 6px;
         font-size: 13px;
@@ -459,213 +400,197 @@
     }
 </style>
 </head>
-
 <body>
     <div class="content-area">
         <video class="main-video" id="mainVideo" loop playsinline></video>
     </div>
-
     <div class="bottom-nav">
         <div class="nav-item-circle stop-btn" id="stopBtn" title="停止视频">
             ♻️
         </div>
-
         <div class="nav-item-wide" onclick="openCardModal()">
             <span class="nav-wide-icon">🃏</span>
             <span class="nav-wide-text">卡包</span>
         </div>
         <div class="nav-item-circle" onclick="openSettingModal()">⚙️</div>
     </div>
-
     <div class="overlay" id="overlay"></div>
-
     <!-- 卡包 -->
     <div class="panel card-panel" id="cardPanel">
         <div class="modal-header">
             <div class="modal-title">卡包</div>
             <div class="close-modal" onclick="closeCardModal()">×</div>
         </div>
-
         <div class="card-section">
             <div class="section-title">动作</div>
             <div class="card-grid">
-                <div class="card-item" data-name="收放自如">
+                <div class="card-item" data-name="v1">
                     <div class="card-media">
-                        <video loop playsinline><source src="video/收放自如.mp4" type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"></video>
+                        <video loop playsinline><source src="video/v1.mp4" type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"></video>
                     </div>
                     <div class="card-name">收放自如</div>
                 </div>
-                <div class="card-item" data-name="路过">
+                <div class="card-item" data-name="v2">
                     <div class="card-media">
-                        <video loop playsinline><source src="video/路过.mp4" type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"></video>
+                        <video loop playsinline><source src="video/v2.mp4" type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"></video>
                     </div>
                     <div class="card-name">路过</div>
                 </div>
-                <div class="card-item" data-name="宠物">
+                <div class="card-item" data-name="v3">
                     <div class="card-media">
-                        <video loop playsinline><source src="video/宠物.mp4" type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"></video>
+                        <video loop playsinline><source src="video/v3.mp4" type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"></video>
                     </div>
                     <div class="card-name">宠物</div>
                 </div>
-                <div class="card-item" data-name="太极">
+                <div class="card-item" data-name="v4">
                     <div class="card-media">
-                        <video loop playsinline><source src="video/太极.mp4" type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"></video>
+                        <video loop playsinline><source src="video/v4.mp4" type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"></video>
                     </div>
                     <div class="card-name">太极</div>
                 </div>
-                <div class="card-item" data-name="惊鸿一瞥">
+                <div class="card-item" data-name="v5">
                     <div class="card-media">
-                        <video loop playsinline><source src="video/惊鸿一瞥.mp4" type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"></video>
+                        <video loop playsinline><source src="video/v5.mp4" type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"></video>
                     </div>
                     <div class="card-name">惊鸿一瞥</div>
                 </div>
-                <div class="card-item" data-name="嘘">
+                <div class="card-item" data-name="v6">
                     <div class="card-media">
-                        <video loop playsinline><source src="video/嘘.mp4" type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"></video>
+                        <video loop playsinline><source src="video/v6.mp4" type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"></video>
                     </div>
                     <div class="card-name">嘘</div>
                 </div>
-                <div class="card-item" data-name="虔诚">
+                <div class="card-item" data-name="v7">
                     <div class="card-media">
-                        <video loop playsinline><source src="video/虔诚.mp4" type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"></video>
+                        <video loop playsinline><source src="video/v7.mp4" type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"></video>
                     </div>
                     <div class="card-name">虔诚</div>
                 </div>
-                <div class="card-item" data-name="龟速前进">
+                <div class="card-item" data-name="v8">
                     <div class="card-media">
-                        <video loop playsinline><source src="video/龟速前进.mp4" type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"></video>
+                        <video loop playsinline><source src="video/v8.mp4" type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"></video>
                     </div>
                     <div class="card-name">龟速前进</div>
                 </div>
             </div>
         </div>
-
         <div class="card-section">
             <div class="section-title">场景</div>
             <div class="card-grid">
-                <div class="card-item" data-name="传说">
+                <div class="card-item" data-name="v9">
                     <div class="card-media">
-                        <video loop playsinline><source src="video/传说.mp4" type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"></video>
+                        <video loop playsinline><source src="video/v9.mp4" type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"></video>
                     </div>
                     <div class="card-name">传说</div>
                 </div>
-                <div class="card-item" data-name="神圣">
+                <div class="card-item" data-name="v10">
                     <div class="card-media">
-                        <video loop playsinline><source src="video/神圣.mp4" type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"></video>
+                        <video loop playsinline><source src="video/v10.mp4" type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"></video>
                     </div>
                     <div class="card-name">神圣</div>
                 </div>
-                <div class="card-item" data-name="降临">
+                <div class="card-item" data-name="v11">
                     <div class="card-media">
-                        <video loop playsinline><source src="video/降临.mp4" type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"></video>
+                        <video loop playsinline><source src="video/v11.mp4" type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"></video>
                     </div>
                     <div class="card-name">降临</div>
                 </div>
-                <div class="card-item" data-name="负蛙">
+                <div class="card-item" data-name="v12">
                     <div class="card-media">
-                        <video loop playsinline><source src="video/负蛙.mp4" type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"></video>
+                        <video loop playsinline><source src="video/v12.mp4" type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"></video>
                     </div>
                     <div class="card-name">负蛙</div>
                 </div>
-                <div class="card-item" data-name="破壳">
+                <div class="card-item" data-name="v13">
                     <div class="card-media">
-                        <video loop playsinline><source src="video/破壳.mp4" type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"></video>
+                        <video loop playsinline><source src="video/v13.mp4" type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"></video>
                     </div>
                     <div class="card-name">破壳</div>
                 </div>
-                <div class="card-item" data-name="相视一笑">
+                <div class="card-item" data-name="v14">
                     <div class="card-media">
-                        <video loop playsinline><source src="video/相视一笑.mp4" type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"></video>
+                        <video loop playsinline><source src="video/v14.mp4" type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"></video>
                     </div>
                     <div class="card-name">相视一笑</div>
                 </div>
-                <div class="card-item" data-name="万有引力">
+                <div class="card-item" data-name="v15">
                     <div class="card-media">
-                        <video loop playsinline><source src="video/万有引力.mp4" type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"></video>
+                        <video loop playsinline><source src="video/v15.mp4" type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"></video>
                     </div>
                     <div class="card-name">万有引力</div>
                 </div>
             </div>
         </div>
-
         <div class="card-section">
             <div class="section-title">陪伴</div>
             <div class="card-grid">
-                <div class="card-item" data-name="优雅">
+                <div class="card-item" data-name="v16">
                     <div class="card-media">
-                        <video loop playsinline><source src="video/优雅.mp4" type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"></video>
+                        <video loop playsinline><source src="video/v16.mp4" type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"></video>
                     </div>
                     <div class="card-name">优雅</div>
                 </div>
-                <div class="card-item" data-name="学习使我快乐">
+                <div class="card-item" data-name="v17">
                     <div class="card-media">
-                        <video loop playsinline><source src="video/学习使我快乐.mp4" type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"></video>
+                        <video loop playsinline><source src="video/v17.mp4" type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"></video>
                     </div>
                     <div class="card-name">学习使我快乐</div>
                 </div>
-                <div class="card-item" data-name="兢兢业业">
+                <div class="card-item" data-name="v18">
                     <div class="card-media">
-                        <video loop playsinline><source src="video/兢兢业业.mp4" type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"></video>
+                        <video loop playsinline><source src="video/v18.mp4" type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"></video>
                     </div>
                     <div class="card-name">兢兢业业</div>
                 </div>
-                <div class="card-item" data-name="蛙不易">
+                <div class="card-item" data-name="v19">
                     <div class="card-media">
-                        <video loop playsinline><source src="video/蛙不易.mp4" type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"></video>
+                        <video loop playsinline><source src="video/v19.mp4" type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"></video>
                     </div>
                     <div class="card-name">蛙不易</div>
                 </div>
-                <div class="card-item" data-name="忧郁童年">
+                <div class="card-item" data-name="v20">
                     <div class="card-media">
-                        <video loop playsinline><source src="video/忧郁童年.mp4" type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"></video>
+                        <video loop playsinline><source src="video/v20.mp4" type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"></video>
                     </div>
                     <div class="card-name">忧郁童年</div>
                 </div>
             </div>
         </div>
     </div>
-
     <!-- 设置面板 -->
     <div class="panel setting-panel" id="settingPanel">
         <div class="close-modal" onclick="closeSettingModal()">×</div>
-
         <div class="setting-header">
             <div class="frog-avatar">
-                <img src="frog-avatar.png" alt="奶蛙头像" />
+                <img src="img/frog_avatar.png" alt="奶蛙头像" />
             </div>
             <div class="setting-title">奶蛙</div>
         </div>
-
         <div class="menu-item">
             <div class="menu-left">水平镜像</div>
             <div class="toggle" onclick="this.classList.toggle('on')"></div>
         </div>
-
         <div class="menu-item">
             <div class="menu-left">屏幕常亮</div>
             <div class="toggle on" onclick="this.classList.toggle('on')"></div>
         </div>
-
         <div class="about-button-item">
             <button class="about-button" onclick="openAboutModal()">关于奶蛙身世</button>
         </div>
-
         <div class="credit-section">
             <div class="credit-title">开发和制作</div>
-
             <div class="credit-item">
                 <div class="credit-avatar">
-                    <img src="credit-1.png" alt="阿达希尔的源石后花园" />
+                    <img src="img/credit_1.png" alt="阿达希尔的源石后花园" />
                 </div>
                 <div class="credit-info">
                     <div class="credit-name">阿达希尔的源石后花园</div>
                     <div class="credit-role">角色设定</div>
                 </div>
             </div>
-
             <div class="credit-item">
                 <div class="credit-avatar">
-                    <img src="credit-2.png" alt="三鹿氰胺" />
+                    <img src="img/credit_2.png" alt="三鹿氰胺" />
                 </div>
                 <div class="credit-info">
                     <div class="credit-name">三鹿氰胺</div>
@@ -673,11 +598,9 @@
                 </div>
             </div>
         </div>
-
         <!-- 好评区域 -->
         <div class="review-section">
             <div class="review-title">自发布以来好评如潮</div>
-
             <div class="review-card">
                 <div class="review-header">
                     <div class="review-app">宝藏逼娃APP！！！推荐给所有宝妈</div>
@@ -688,7 +611,6 @@
                     姐妹们！给我加女儿下了这个APP，哭着喊着求着我下呀，耐不住还是给她下了，结果看完直接笑着去写作业了！九点就直接睡了呀！真不敢相信这个软件的教育意义！为创作者点赞！👍宝妈宝爸手机上都该有哈！！！必备宝藏APP！！！
                 </div>
             </div>
-
             <div class="review-card">
                 <div class="review-header">
                     <div class="review-app">完美内裤购物体验</div>
@@ -700,18 +622,15 @@
                 </div>
             </div>
         </div>
-
     </div>
-
     <!-- 关于奶蛙身世视频页：居中显示 -->
     <div class="about-panel" id="aboutPanel">
         <div class="close-about-btn" onclick="closeAboutModal()">×</div>
         <video id="aboutVideo" class="about-video" loop playsinline>
-            <source src="video/关于奶蛙身世.mp4" type="video/mp4; codecs=avc1.4D401E,mp4a.40.2">
+            <source src="video/about_origin.mp4" type="video/mp4; codecs=avc1.4D401E,mp4a.40.2">
         </video>
     </div>
-
-    <audio id="tapAudio" src="tap.mp3" preload="auto">
+    <audio id="tapAudio" src="audio/tap.mp3" preload="auto">
 
 <script>
     const overlay = document.getElementById("overlay");
@@ -722,29 +641,24 @@
     const mainVideo = document.getElementById("mainVideo");
     const tapAudio = document.getElementById("tapAudio");
     const stopBtn = document.getElementById("stopBtn");
-
     const H264_TYPE = "video/mp4; codecs=avc1.4D401E,mp4a.40.2";
 
     function openCardModal() {
         overlay.classList.add("active");
         cardPanel.classList.add("active");
     }
-
     function closeCardModal() {
         overlay.classList.remove("active");
         cardPanel.classList.remove("active");
     }
-
     function openSettingModal() {
         overlay.classList.add("active");
         settingPanel.classList.add("active");
     }
-
     function closeSettingModal() {
         overlay.classList.remove("active");
         settingPanel.classList.remove("active");
     }
-
     function openAboutModal() {
         settingPanel.classList.remove("active");
         aboutPanel.classList.add("active");
@@ -753,18 +667,15 @@
             console.log("关于奶蛙身世视频播放失败：", err);
         });
     }
-
     function closeAboutModal() {
         aboutPanel.classList.remove("active");
         aboutVideo.pause();
         settingPanel.classList.add("active");
     }
-
     overlay.onclick = function () {
         closeCardModal();
         closeSettingModal();
     };
-
     // 静止按钮：点击后隐藏视频，只保留白色遮罩
     stopBtn.onclick = function (e) {
         e.stopPropagation();
@@ -774,30 +685,23 @@
         mainVideo.style.display = "none";
         stopBtn.classList.remove("show");
     };
-
     // 点击卡片：播放 tap.mp3，切换视频并恢复声音
     document.querySelectorAll(".card-item").forEach(function (item) {
         item.onclick = function (e) {
             e.stopPropagation();
-
             var name = item.dataset.name;
-
             tapAudio.currentTime = 0;
             tapAudio.play().catch(function (err) {
                 console.log("tap音效播放失败：", err);
             });
-
             const source = document.createElement("source");
             source.src = "video/" + name + ".mp4";
             source.type = H264_TYPE;
-
             mainVideo.innerHTML = "";
             mainVideo.appendChild(source);
-
             mainVideo.muted = false;
             mainVideo.volume = 1;
             mainVideo.style.display = "block";
-
             mainVideo.load();
             mainVideo.play().then(function () {
                 stopBtn.classList.add("show");
@@ -806,7 +710,6 @@
                 mainVideo.muted = true;
                 mainVideo.play();
             });
-
             closeCardModal();
         };
     });
